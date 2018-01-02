@@ -21,13 +21,9 @@ $ docker run --rm -ti -v $(pwd):/home/builder/src \
 
 $ docker run --rm -ti -v $(pwd):/home/builder/src \
      -v /home/ll-user/work/lambda2/repo/virtualbox/v3.7:/home/builder/repo/virtualbox/v3.7 \
-     abuild-builder /bin/sh
+     abuild-builder /bin/su -l -s /bin/sh builder
 
-# apk update
-
-# su -l -s /bin/sh builder
-
-f5c1eee20ebe:~$
+f5c1eee20ebe:~$ sudo apk update
 
 f5c1eee20ebe:~$ cd src/aports-virtualbox/main/docker/
 
