@@ -15,7 +15,7 @@ Go to the _parent_ directory containing `aports` tree.
 ```
 $ docker run --rm -ti -v $(pwd):/home/builder/src \
      -v <PATH_TO_REPO_BASE_ON_HOST>:/home/builder/repo/<REPO_BASE> \
-     abuild-builder /bin/sh
+     abuild-builder /bin/su -l -s /bin/sh builder
 
 (For example)
 
