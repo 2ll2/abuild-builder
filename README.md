@@ -29,4 +29,7 @@ f5c1eee20ebe:~$ cd src/aports-virtualbox/main/docker/
 
 f5c1eee20ebe:~/src/aports-virtualbox/main/docker$ abuild \
     -c -r -P /home/builder/repo/virtualbox/v3.7
+
+f5c1eee20ebe:~/src/aports-virtualbox/main/docker$ abuild \
+    -P /home/builder/repo/virtualbox/v3.7 cleanoldpkg
 ```
